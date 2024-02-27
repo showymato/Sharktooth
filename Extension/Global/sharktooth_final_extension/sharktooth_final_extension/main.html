@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sharktooth Dark Pattern Detector</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <script src="bootstrap.js"></script>
+  <style>
+    body {
+      min-width: 300px;
+      font-family: 'Arial', sans-serif; /* Changed font family */
+      background-color: #f0f0f0;
+    }
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    h1.red-background {
+      background-color: red;
+      color: white;
+    }
+    .view_detected, .cookies_detected, span[style="cursor:pointer;"] {
+      background-color: #007bff;
+      color:white;
+      cursor: pointer;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+/*      display: none;*/
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .alternate-color tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+    .show-table {
+      display: table;
+    }
+    .hide-button {
+      font-size: smaller; /* Reduced font size */
+      cursor: pointer;
+      color: #007bff;
+      background: none;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span style="font-weight: 600;">Dark Pattern Detector By <br>Sharktooth</span>
+  </div>
+  <div class="card" id="red-site">
+    <h1 class="red-background">Site is marked red by GoI due to Dark Patterns</h1>
+  </div>
+  <div class="card">
+    <span class="view_detected" data-target="#detected_patterns">30 Dark Pattern Detected</span>
+    <div class="detected_patterns" id="detected_patterns" >
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Dark Pattern</th>
+          </tr>
+        </thead>
+        <tbody class="alternate-color">
+          <tr>
+            <td>1</td>
+            <td>Faulty Prices are shown</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Unexpected subscription, canceled</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Your data shared, but not with you</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Hidden fees added, check receipt</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Automatic renewal, but not informed</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="hide-button">Hide</button> <!-- Converted to button -->
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="cookies_detected" data-target="#cookies_div">Cookies Detected</span>
+    <div class="cookies_div" id="cookies_div" style="display: none;">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>S.No</th>
+            <th>Cookie Name</th>
+            <th>Necessity</th>
+          </tr>
+        </thead>
+        <tbody class="alternate-color">
+          <tr>
+            <td>1</td>
+            <td>Email</td>
+            <td>Unnecessary</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Email</td>
+            <td>Unnecessary</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="hide-button">Hide</button> <!-- Converted to button -->
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="view_detected" data-target="#review_details">Read Reviews</span>
+    <div class="review_details" id="review_details" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Review</th>
+          </tr>
+        </thead>
+        <tbody class="alternate-color">
+          <tr>
+            <td>1</td>
+            <td>Good Site But lots of Dark Pattern</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Good Site But lots of Dark Pattern</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Good Site But lots of Dark Pattern</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Good Site But lots of Dark Pattern</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Good Site But lots of Dark Pattern</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="hide-button">Hide</button> <!-- Converted to button -->
+    </div>
+  </div>
+  <div class="card">
+    <span class="" >Write Reviews</span>
+    <textarea col="15" rows="5"></textarea>
+    <input type="submit" value="Add Review">
+  </div>
+  <div class="card">
+    <span class="view_detected" data-target="#alternate_site_div">Explore Alternate Sites</span>
+    <div class="alternate_site_div" id="alternate_site_div" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Site</th>
+          </tr>
+        </thead>
+        <tbody class="alternate-color">
+          <tr>
+            <td>1</td>
+            <td>Amazon</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Amazon</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Amazon</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Amazon</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Amazon</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="hide-button">Hide</button> <!-- Converted to button -->
+    </div>
+  </div>
+</body>
+</html>

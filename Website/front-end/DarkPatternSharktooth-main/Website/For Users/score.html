@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score</title>
+    <link rel="stylesheet" href="css/score.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div>
+          <img
+            class="nav-logo"
+            src="assets/main_logo.jpg"
+            style="height: 50px; width: 50px"
+            alt=""
+          />
+          <a class="navbar-brand" href="index.html">Sharktooth</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="sign.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="score.html">Score</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dictionary.html">Dictionary</a>
+            </li>
+          </ul>
+
+          <form
+            class="form-inline my-2 my-lg-0"
+            style="flex-flow: nowrap !important"
+          >
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search company"
+              aria-label="Search"
+              id="searchInput"
+            />
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <ul class="slider">
+        <li
+          class="item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Facebook"</h2>
+            <p>65%</p>
+            <p class="description">
+              Facebook has been criticized for employing dark patterns,
+              including complex privacy settings and misleading language, which
+              can manipulate users into sharing more information. They often
+              bury opt-out options, use confusing interfaces, and push updates
+              without clear notification, potentially leading to unintended
+              consequences or changes in privacy settings. Ongoing scrutiny
+              influences how Facebook and similar companies design their
+              interfaces.
+            </p>
+            <button>Flag Color: 🚩</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Amazon"</h2>
+            <p>80%</p>
+            <p class="description">
+              Amazon has been criticized for employing dark patterns, including
+              complex privacy settings and misleading language, which can
+              manipulate users into sharing more information. They often bury
+              opt-out options, use confusing interfaces, and push updates
+              without clear notification, potentially leading to unintended
+              consequences or changes in privacy settings. Ongoing scrutiny
+              influences how Facebook and similar companies design their
+              interfaces.
+            </p>
+            <button>Flag Color: 🚩</button>
+          </div>
+        </li>
+
+        <li
+          class="item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"MicroSoft"</h2>
+            <p>75%</p>
+            <p class="description">
+              Microsoft has faced criticism for using dark patterns, including
+              misleading language and confusing interface designs, in its
+              products and services. These practices can manipulate users into
+              making unintended purchases or agreeing to terms they may not
+              fully understand. While Microsoft has made efforts to improve
+              transparency and user control, ongoing scrutiny continues to shape
+              their design choices.
+            </p>
+            <button>Flag Color: 🚩</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20231228172727/gfg-image.jpg');
+          "
+        >
+          <div class="content">
+            <h2 style="color: green" class="title">"Geeks for Geeks"</h2>
+            <p style="color: green">70%</p>
+            <p style="color: black" class="description">
+              YouTube has been accused of using dark patterns in its platform,
+              such as autoplaying videos, unclear privacy settings, and
+              algorithmic recommendations that can lead to excessive screen
+              time. These practices can influence user behavior and engagement,
+              potentially leading to negative effects on mental health. As
+              YouTube addresses these concerns, its interface design may evolve
+              to better prioritize user well-being.
+            </p>
+            <button style="color: green">Flag Color: 🚩</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('data:image/png;base64,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');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Lucidchart"</h2>
+            <p>60%</p>
+            <p class="description">
+              Apple has faced criticism for its use of dark patterns, including
+              aggressive marketing tactics and limited repair options that can
+              push users towards buying new devices rather than repairing
+              existing ones. While Apple has taken steps to improve transparency
+              and repairability, ongoing scrutiny affects how the company
+              designs its products and interfaces.
+            </p>
+            <button>Flag Color: 🚩</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://www.delhicapital.com/wp-content/uploads/2023/06/Abhibus-Ticket-Booking-Review.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title" style="color: black">"Abhi Bus"</h2>
+            <p style="color: black">80%</p>
+            <p style="color: black" class="description">
+              Google has been associated with dark patterns in its user
+              interface design, such as misleading language, hidden opt-outs,
+              and sneakily adding items to shopping carts without clear
+              notification. These tactics can manipulate users into agreeing to
+              terms or purchasing products unwittingly. While specific practices
+              may change over time, scrutiny and feedback influence how
+              companies like Google design their interfaces
+            </p>
+            <button style="color: black">Flag Color: 🚩</button>
+          </div>
+        </li>
+      </ul>
+      <nav class="nav">
+        <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+        <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+      </nav>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="score.js"></script>
+  </body>
+</html>
